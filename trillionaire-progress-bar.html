@@ -7,46 +7,71 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.typekit.net/qje0tyc.css">
+    <link rel="stylesheet" href="trillionaire-progress-bar.css">
     <title>Trillionaire Progress Bar</title>
   </head>
   <body>
-    <br><br><br>
+    <div class="container padded-container">
+      <h1 class="cubano">TRILLIONAIRE LOADING ...</h1>
+    </div>
+    <div class="break"></div>
     <div class="container">
-      <h2 id="caption1"></h2>
-      <div class="progress">
-          <div id="dynamic1" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      <div class="progress" style="height:6vw">
+          <div id="dynamic1" class="progress-bar progress-bar-striped progress-bar-animated main-bar bg-success value1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </div>
-    <br><br><br>
+    <div class="break"></div>
     <div class="container">
-      <h6 id="caption2"></h6>
-      <div class="progress">
-          <div id="dynamic2" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        <h1 id="caption1" class="cubano interp"></h1>
+        <h1 class="cubano interp">&nbsp;IS ON HIS WAY TO A NET WORTH OF 1 TRILLION DOLLARS.</h1>
+    </div>
+    <div class="break-large"></div>
+    
+
+
+    <div class="break-medium"></div>
+    <div class="container padded-container">
+      <h6 id="caption2" class="cubano interp"></h6>
+      <h6 class="cubano interp">&nbsp;(</h6>
+      <h6 class="cubano value2 interp"></h6>
+      <h6 class="cubano interp">)</h6>
+      <div class="progress" style="height:3vw">
+          <div id="dynamic2" class="progress-bar progress-bar-striped progress-bar-animated secondary-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </div>
-    <br><br><br>
+    <div class="break-medium"></div>
     <div class="container">
-      <h6 id="caption3"></h6>
-      <div class="progress">
-          <div id="dynamic3" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      <h6 id="caption3" class="cubano interp"></h6>
+      <h6 class="cubano interp">&nbsp;(</h6>
+      <h6 class="cubano value3 interp"></h6>
+      <h6 class="cubano interp">)</h6>
+      <div class="progress" style="height:3vw">
+          <div id="dynamic3" class="progress-bar progress-bar-striped progress-bar-animated secondary-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </div>
-    <br><br><br>
+    <div class="break-medium"></div>
     <div class="container">
-      <h6 id="caption4"></h6>
-      <div class="progress">
-          <div id="dynamic4" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      <h6 id="caption4" class="cubano interp"></h6>
+      <h6 class="cubano interp">&nbsp;(</h6>
+      <h6 class="cubano value4 interp"></h6>
+      <h6 class="cubano interp">)</h6>
+      <div class="progress" style="height:3vw">
+          <div id="dynamic4" class="progress-bar progress-bar-striped progress-bar-animated secondary-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </div>
-    <br><br><br>
+    <div class="break-medium"></div>
     <div class="container">
-      <h6 id="caption5"></h6>
-      <div class="progress">
-          <div id="dynamic5" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      <h6 id="caption5" class="cubano interp"></h6>
+      <h6 class="cubano interp">&nbsp;(</h6>
+      <h6 class="cubano value5 interp"></h6>
+      <h6 class="cubano interp">)</h6>
+      <div class="progress" style="height:3vw">
+          <div id="dynamic5" class="progress-bar progress-bar-striped progress-bar-animated secondary-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </div>
-    <br><br><br>
+    <div class="break-medium"></div>
+    
 
 
     <!-- Optional JavaScript -->
@@ -65,9 +90,10 @@
               $("#dynamic" + i)
               .css("width", (row[2] / 10000).toFixed(2) + "%")
               .attr("aria-valuenow", (row[2] / 10000).toFixed(2))
-              .text((row[2] / 10000).toFixed(2) + "% Complete");
               $("#caption" + i)
               .html(row[0]);
+              $(".value" + i)
+              .text((row[2] / 10000).toFixed(2) + "% Complete");
             }
 
           }
