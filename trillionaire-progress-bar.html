@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/qje0tyc.css">
-    <link rel="stylesheet" href="trillionaire-progress-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="static/trillionaire-progress-bar.css">
     <title>Trillionaire Progress Bar</title>
   </head>
   <body>
@@ -26,12 +28,33 @@
         <h1 id="caption1" class="cubano interp"></h1>
         <h1 class="cubano interp">&nbsp;IS ON HIS WAY TO A NET WORTH OF 1 TRILLION DOLLARS.</h1>
     </div>
-    <div class="break-large"></div>
-    
-
-
     <div class="break-medium"></div>
-    <div class="container padded-container">
+    <div class="arrow bounce">
+      <a class="fa fa-arrow-down fa-2x"></a>
+    </div>
+
+
+
+    <br><br><br>
+
+    <div class="container" data-aos="fade-up">
+      <h1 class="cubano">HERE IS WHAT COULD BE ACHIEVED WITH A PORTION OF THAT WEALTH</h1>
+    </div>
+    <div class="break-medium"></div>
+    <div class="container" data-aos="fade-up">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <div class="container" data-aos="fade-up">
+      <h1 class="cubano">OTHERS CONTENDERS TO REACH 1 TRILLION DOLLARS</h1>
+    </div>
+    <div class="container padded-container first-bar" data-aos="fade-up">
       <h6 id="caption2" class="cubano interp"></h6>
       <h6 class="cubano interp">&nbsp;(</h6>
       <h6 class="cubano value2 interp"></h6>
@@ -41,7 +64,7 @@
       </div>
     </div>
     <div class="break-medium"></div>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h6 id="caption3" class="cubano interp"></h6>
       <h6 class="cubano interp">&nbsp;(</h6>
       <h6 class="cubano value3 interp"></h6>
@@ -51,7 +74,7 @@
       </div>
     </div>
     <div class="break-medium"></div>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h6 id="caption4" class="cubano interp"></h6>
       <h6 class="cubano interp">&nbsp;(</h6>
       <h6 class="cubano value4 interp"></h6>
@@ -61,7 +84,7 @@
       </div>
     </div>
     <div class="break-medium"></div>
-    <div class="container">
+    <div class="container" data-aos="fade-up"> 
       <h6 id="caption5" class="cubano interp"></h6>
       <h6 class="cubano interp">&nbsp;(</h6>
       <h6 class="cubano value5 interp"></h6>
@@ -69,6 +92,12 @@
       <div class="progress" style="height:3vw">
           <div id="dynamic5" class="progress-bar progress-bar-striped progress-bar-animated secondary-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
+    </div>
+
+    <div class="break-large"></div>
+    <div class="break-large"></div>
+    <div class="container">
+      <h1 class="cubano">Lorem ipsum</h1>
     </div>
     <div class="break-medium"></div>
     
@@ -79,6 +108,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       function loadDoc() {
         var xhttp = new XMLHttpRequest();
