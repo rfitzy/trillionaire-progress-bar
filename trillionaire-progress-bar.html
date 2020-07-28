@@ -38,6 +38,7 @@
     <div class="break-medium"></div>
     <div class="container" data-aos="fade-up">
       <div class="progress">
+        <div class="progress-bar bg-danger flint-part1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         <div class="progress-bar education-part1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         <div class="progress-bar bg-info homelessness-part1" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         <div class="progress-bar bg-warning food-part1" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -46,22 +47,22 @@
       <br><br>
 
 <div class="container row" data-aos="fade-up">
-      <h2> <span class="legend1" style="background-color: #007BFF">$700 M</span> Providing Flint, Michigan With Clean Water</h2>
+      <h2> <span class="legend1" style="background-color: #dc3545">$700 M</span> Providing Flint, Michigan With Clean Water</h2>
     </div>
 <br>
 
 <div class="container row" data-aos="fade-up">
-       <h2> <span class="legend1" style="background-color: #17A2B8">$30 B</span> Ending the global food crisis for 1 year</h2>
+  <h2> <span class="legend1" style="background-color: #007BFF">$8 B</span> PROVIDE EDUCATION TO 65 MILLION CHILDREN AROUND THE WORLD</h2>
 </div>
 <br>
 
 <div class="container row" data-aos="fade-up">
-       <h2> <span class="legend1" style="background-color: #17A2B8">$8 B</span> PROVIDE EDUCATION TO 65 MILLION CHILDREN AROUND THE WORLD</h2>
+  <h2> <span class="legend1" style="background-color: #17A2B8">$20 B</span> END HOMELESSNESS IN THE UNITED STATES</h2>
 </div>
 <br>
 
 <div class="container row" data-aos="fade-up">
-       <h2> <span class="legend1" style="background-color: #17A2B8">$20 B</span> END HOMELESSNESS IN THE UNITED STATES</h2>
+       <h2> <span class="legend1" style="background-color: #ffc107">$30 B</span> Ending the global food crisis for 1 year</h2>
 </div>
 <br>
 
@@ -152,6 +153,9 @@
               .html(row[0])
               $(".value" + i)
               .text((row[2] / 10000).toFixed(2) + "% Complete")
+              $(".flint-part" + i)
+              .css("width", ((700/row[2]) * 100).toFixed(2) + "%")
+              .attr("aria-valuenow", ((700/row[2]) * 100).toFixed(2))
               $(".education-part" + i)
               .css("width", ((8000/row[2]) * 100).toFixed(2) + "%")
               .attr("aria-valuenow", ((8000/row[2]) * 100).toFixed(2))
