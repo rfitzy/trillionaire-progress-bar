@@ -82,6 +82,12 @@ h1 {
 }
 
 
+footer {
+    padding: 2vw;
+    background: rgb(235, 233, 233);
+    text-align: center;
+}
+
 /* scroll down arrow */
 
 .arrow {
