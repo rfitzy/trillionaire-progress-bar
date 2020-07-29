@@ -51,18 +51,23 @@ body {
 
 
 #dynamic1 {
+    height: 100%;
 }
 
 #dynamic2 {
+    height: 100%;
 }
 
 #dynamic3 {
+    height: 100%;
 }
 
 #dynamic4 {
+    height: 100%;
 }
 
 #dynamic5 {
+    height: 100%;
 }
 
 
@@ -136,22 +141,6 @@ a {
     position: absolute;
 }
   
-#bill-gates2 {
-    width: 8%;
-    height: auto;
-}
-
-#bernard-arnault3 {
-    width: 8%;
-    height: auto;
-}
-
-#mark-zuckerberg4 {
-    width: 8%;
-    height: auto;
-}
-
-#mukesh-ambani5 {
-    width: 8%;
-    height: auto;
+.other-contenders {
+      height: 100%;
 }
