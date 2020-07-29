@@ -10,7 +10,7 @@ body {
 }
 
 .legend1 {
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     padding: 5px 13px 5px 10px;
 }
@@ -74,26 +74,7 @@ body {
 }
 
 
-#global-education {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-#homelessness {
-    background-color: #17a2b8;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#global-food {
-    background-color: #ffc107;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 
 h1 {
