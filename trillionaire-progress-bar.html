@@ -25,7 +25,7 @@
     </div>
     <div class="break"></div>
     <div class="container">
-        <h1 id="caption1" class="interp"></h2>
+        <h1 id="caption1" class="interp"></h1>
         <h1 class="interp">&nbsp;IS ON HIS WAY TO A NET WORTH OF 1 TRILLION DOLLARS.</h1>
 <!-- this plays the song "bills" bu lunch money lewis when you press play -->
         <br><br><br>
@@ -38,7 +38,9 @@
     </div>
 
     <div class="container" data-aos="fade-up">
-      <h1>HERE IS WHAT COULD BE ACHIEVED WITH A PORTION OF HIS $__</h1>
+      <h1 class="interp">HERE IS WHAT COULD BE ACHIEVED WITH A PORTION OF HIS $</h1>
+      <h1 id="caption21" class="interp"></h1>
+      <h1 class="interp">B</h1>
     </div>
     <div class="break-medium"></div>
     <div class="container" data-aos="fade-up">
@@ -165,6 +167,8 @@
               .attr("aria-valuenow", (row[2] / 10000).toFixed(2))
               $("#caption" + i)
               .html(row[0])
+              $("#caption2" + i)
+              .html((row[2] / 1000).toFixed(2))
               $(".value" + i)
               .text((row[2] / 10000).toFixed(2) + "% Complete")
               $(".flint-part" + i)
