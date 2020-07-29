@@ -147,4 +147,32 @@ a {
     }
   }
 
+/* heads on the progress bar */
+
+.progress {
+    position: relative;
+}
+
+.progress img {
+    position: absolute;
+}
   
+#bill-gates2 {
+    width: 8%;
+    height: auto;
+}
+
+#bernard-arnault3 {
+    width: 8%;
+    height: auto;
+}
+
+#mark-zuckerberg4 {
+    width: 8%;
+    height: auto;
+}
+
+#mukesh-ambani5 {
+    width: 8%;
+    height: auto;
+}
