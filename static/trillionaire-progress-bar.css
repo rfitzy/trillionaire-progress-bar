@@ -10,7 +10,7 @@ body {
 }
 
 .legend1 {
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     padding: 5px 13px 5px 10px;
 }
@@ -66,32 +66,19 @@ body {
 }
 
 
-#global-education {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-#homelessness {
-    background-color: #17a2b8;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#global-food {
-    background-color: #ffc107;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 
 h1 {
     font-size: 6vw;
 }
 
+
+footer {
+    padding: 2vw;
+    background: rgb(235, 233, 233);
+    text-align: center;
+}
 
 /* scroll down arrow */
 
@@ -139,4 +126,32 @@ a {
     }
   }
 
+/* heads on the progress bar */
+
+.progress {
+    position: relative;
+}
+
+.progress img {
+    position: absolute;
+}
   
+#bill-gates2 {
+    width: 8%;
+    height: auto;
+}
+
+#bernard-arnault3 {
+    width: 8%;
+    height: auto;
+}
+
+#mark-zuckerberg4 {
+    width: 8%;
+    height: auto;
+}
+
+#mukesh-ambani5 {
+    width: 8%;
+    height: auto;
+}
